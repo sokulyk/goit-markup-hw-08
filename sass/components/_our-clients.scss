@@ -1,0 +1,46 @@
+/* Постійні клієнти */
+
+.clients {
+    /* padding: 94px 0; */
+
+    &__list {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 29px;
+    }
+    
+    &__link {
+      width: 210px;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--icons);
+      border-radius: 4px;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      @media (min-width: 480px) {        
+        width: 170px;
+        gap: 30px;
+      } 
+    
+    }
+    
+    /* 4. При .clients-link:hover краще міняйте колір бордеру, а не малюйте його наново */
+    
+    &__link:hover {
+      border-color: var(--accent-color);
+    }
+    
+    &__link:hover .svg-icons {
+      fill: var(--accent-color);
+      /* fill: currentColor; */
+    }
+
+  }
+  
+  /* &__link:hover &__icons { */
+  /* fill: var(--accent-color); */
+  /* fill: currentColor; */
+  /* } */
