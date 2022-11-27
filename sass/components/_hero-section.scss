@@ -27,7 +27,7 @@
     margin: 0px auto 30px;
     text-align: center;
 
-    @media (min-width: 480px) {        
+    @media (min-width: 480px) and (min-width: 767px) {        
       font-size: 44px;
       line-height: 1.36;
       width: 696px;
