@@ -65,12 +65,14 @@ h2 {
   padding: 0 15px;
 
   @media (min-width: 480px) {        
-    max-width: 480px;
+    // max-width: 480px;
+    // max-width: auto;
     margin: 0 auto;
   } 
 
   @media (min-width: 768px) {        
-    min-width: 100%;
+    // min-width: 100%;
+    max-width: 768px;
     margin: 0 auto;
   } 
 
