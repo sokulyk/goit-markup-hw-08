@@ -5,7 +5,20 @@
     url("../images/bg-header-mob-480.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;   
+  background-size: cover;  
+  
+  @include for-tablet {        
+    // padding: 200px 0;
+    background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url("../images/bg-header-mob-768.jpg");
+  }  
+  
+  @include for-desktop {        
+    padding: 200px 0;
+    background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url("../images/bg-header.jpg");
+
+  } 
 
   @include for-desktop {        
     padding: 200px 0;
