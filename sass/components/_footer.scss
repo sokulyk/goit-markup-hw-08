@@ -8,10 +8,11 @@
       flex-direction: column;
       text-align: center;
 
-      @media (min-width: 480px) {        
+      @include for-desktop {    
         flex-direction: row;
         text-align: left;
-      } 
+      }
+    
 
     }
       
@@ -25,9 +26,6 @@
       letter-spacing: 0.03em;
       padding-bottom: 60px;
 
-      @media (min-width: 480px) {        
-        
-      } 
     }
     
     &__address-string:nth-child(-n + 2) {
@@ -35,9 +33,10 @@
       width: 231px;
       margin: 8px auto;
 
-      @media (min-width: 480px) {        
+
+      @include for-desktop {    
         margin-bottom: 9px;
-      } 
+      }
 
     }
     
@@ -45,9 +44,10 @@
       
       //  border: 1px solid red;
 
-      @media (min-width: 480px) {        
+      @include for-desktop {    
         margin-left: 70px;
-      } 
+      }
+      
 
     }
       
@@ -79,11 +79,11 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-
-      @media (min-width: 480px) {        
+      
+      @include for-desktop {    
         flex-direction: row;
         gap: 12px;
-      } 
+      }
 
     }
     
@@ -99,9 +99,9 @@
       line-height: 1.25;
       letter-spacing: 0.03em;
 
-      @media (min-width: 480px) {        
+      @include for-desktop {    
         width: 358px;
-      } 
+      }
 
     }
     
