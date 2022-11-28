@@ -205,7 +205,15 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/team_2.jpg" alt="Ольга Рєпіна" width="270" height="260">
+
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./images/team_2_450m.jpg">
+                            <source media="(min-width: 768px)" srcset="./images/team_2_354t.jpg">
+                            <source media="(min-width: 1200px)" srcset="./images/team_2.jpg">
+                            <img src="./images/team_2.jpg" alt="Ольга Рєпіна">
+                        </picture>
+
+                        
                         <h3 class="team__title">Ольга Рєпіна</h3>
                         <p class="team__text">Frontend Developer</p>
                         <!-- соц линки команды -->
