@@ -19,13 +19,31 @@
   
   .modal {
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    top: 50%;
+    // height: 609px;
     background-color: var(--light-main-color);
     padding: 40px;
+    // transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+
+    @include for-mobile {
+      // top: 93px;   
+      width: 450px;
+      }
+
+    @include for-tablet {
+      // top: 208px;  
+        }
+
+    @include for-desktop { 
+    // top: 50%;   
+    width: 528px;
+    height: 581px;
+    // transform: translate(-50%, -50%);
+    
+    }
+
   
     &__title {
       font-weight: 700;
@@ -50,6 +68,17 @@
       align-items: center;
       justify-content: center;
     }
+
+      &__close-btn:active,
+      &__close-btn:hover {
+        
+        fill: var(--accent-color);
+
+      @include for-desktop {    
+        fill: currentColor;
+      }
+
+      }
 
   }
   
@@ -143,17 +172,23 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       color: var(--description-color);
+
+      @include for-desktop {    
+        font-size: 14px;
+        line-height: 1.71;
+      }
+
     }
     
    &__label::before {
       content: "";
       position: absolute;
       /* top: 0px; */
-      top: 4px;
+      // top: 4px;
       left: 0;
       width: 16px;
       height: 15px;
@@ -161,18 +196,28 @@
       /* background: var(--accent-color); */
       border-radius: 2px;
       z-index: -1;
+
+      @include for-desktop {    
+        top: 4px;
+      }
+
     }
     
    &__icon {
       padding: 2px;
       left: 0px;
-      top: 4px;
+      // top: 4px;
       /* top: 0px; */
       /* top: 50%; */
       /* transform: translateY(-50%); */
       position: absolute;
       fill: none;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include for-desktop {    
+        top: 4px;
+      }
+
     }
     
    &__input:checked + &__icon {

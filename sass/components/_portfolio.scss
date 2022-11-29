@@ -6,9 +6,25 @@
 
     &__filter {
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 50px;
+      width: 326px;  
+      line-height: 2.8;
+
+      @include for-tablet {
+        width: auto;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      @include for-desktop {
+        margin-bottom: 50px;
+      }
+
+
     }
     
     &__btn {
