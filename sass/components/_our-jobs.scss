@@ -4,14 +4,25 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    // border: 1px solid blue;
+
+    @include for-tablet {
+      justify-content: left;
+    }
 
     &__item {
       /* стиль списка Наши работы */
       background: var(--main-bg);
-      /* border: 1px solid var(--light-gray); */
-      max-width: 370px;
-      /*отступ между меэлементами списка*/
-      /* cursor: pointer; */
+      // border: 1px solid black;
+      width: 450px;
+      // max-width: 370px;
+
+      @include for-tablet {
+        // top: 93px;   
+        width: 354px;
+      }
+
     }
     
     &__title {
@@ -59,7 +70,7 @@
     &__txt {
       /* имена и профессии команды */
       font-size: 16px;
-      line-height: 2.5;
+      line-height: 2.2;
       letter-spacing: 0.03em;
       color: var(--description-color);
     }
