@@ -31,18 +31,18 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
       text-align: center;
-      border: 1px solid blue;
+      // border: 1px solid blue;
       width: 450px;
       margin: 0 auto;
 
       @include for-tablet {        
-        border: 1px solid black;
+        // border: 1px solid black;
         width: 354px;
       }
 
       @include for-desktop {        
           // border: 1px solid black;
-        width: 354px;
+        // width: 354px;
 
       }  
 
