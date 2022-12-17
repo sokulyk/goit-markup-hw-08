@@ -9,11 +9,15 @@
     padding: 40px;
     z-index: 1;
     transition: transform .2s;
+    // border: 1px solid black;
 
     &__container {
+        display: flex;
+        flex-direction: column;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 auto; 
+        height: 100%;
       }
 
     &.is-open {
@@ -39,8 +43,23 @@
         fill: var(--accent-color);
       }
 
+    &__nav {
+        height: 100%;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid blue;
+    }
+
     &__nav-menu {
-        padding-bottom: 270px;
+        // height: 100%;
+        margin-bottom: auto;
+        // border: 1px solid green;
+    }
+
+    &__nav-contacts {
+        // padding-bottom: 270px;
+        // border: 1px solid green;
     }
 
     &__links {

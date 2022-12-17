@@ -10,9 +10,8 @@
                 url("../images/bg-header-mob-480.jpg");  
   
   @include for-tablet {        
-    // padding: 200px 0;
     background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
-    url("../images/bg-header-mob-768.jpg");
+    url("../images/bg-header-tab-768.jpg");
   }  
   
   @include for-desktop {        
